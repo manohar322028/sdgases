@@ -1207,3 +1207,21 @@ section {
     margin: -20px 0 30px 0;
   }
 }
+.services .icon-box:hover{
+  color: #fff;
+}
+.navbar-mobile ul {
+  height: fit-content !important;
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+  text-align: center;
+  /* width: fit-content; */
+}
