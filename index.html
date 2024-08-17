@@ -1,26 +1,22 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
     <title>SD Gases</title>
     <meta content="Sd Gases" name="description" />
     <meta content="" name="keywords" />
-
     <!-- Favicons -->
     <link href="assets/img/sdgases_logo.png" rel="icon" />
     <link href="assets/img/sdgases_logo.png" rel="apple-touch-icon" />
-
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
-
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
@@ -36,19 +32,16 @@
     />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <script
-      src="https://kit.fontawesome.com/831f59072b.js"
       crossorigin="anonymous"
+      src="https://kit.fontawesome.com/831f59072b.js"
     ></script>
-
     <script
-      type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+      type="module"
     ></script>
-
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-
+    <link href="css/style.css" rel="stylesheet" />
     <!-- =======================================================
   * Template Name: Squadfree - v4.7.0
   * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
@@ -56,10 +49,9 @@
   * License: https://bootstrapmade.com/license/
 
   ======================================================== -->
-
     <!-- Google tag (gtag.js) -->
     <script
-      async
+      async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-HMEJ2NJZ6X"
     ></script>
     <script>
@@ -72,52 +64,53 @@
       gtag("config", "G-HMEJ2NJZ6X");
     </script>
     <style>
-      #3d-models {
-        padding: 40px 0;
+      #products {
+        padding: 60px 0 30px;
+        background-color: #f8f9fa;
       }
 
       .model-container {
         width: 100%;
-        max-width: 1200px;
+        max-width: 800px;
         margin: 0 auto;
       }
 
       .main-model-box {
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         margin-bottom: 20px;
-        border-radius: 10px;
+        border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
       }
 
       .thumbnail-container {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
       }
 
       .thumbnail-box {
-        width: 150px;
-        height: 150px;
-        border-radius: 10px;
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         cursor: pointer;
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #ffffff;
       }
 
       .thumbnail-box:hover {
-        transform: scale(1.05);
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       }
 
       .thumbnail-box.active {
-        border: 3px solid #67b0d1;
-      }
-
-      model-viewer {
-        width: 100%;
-        height: 100%;
+        border: 2px solid #67b0d1;
       }
 
       .model-title {
@@ -128,9 +121,19 @@
         color: #2f4d5a;
       }
 
+      model-viewer {
+        width: 100%;
+        height: 100%;
+        --poster-color: transparent;
+      }
+
+      model-viewer::part(default-progress-bar) {
+        display: none;
+      }
+
       @media (max-width: 768px) {
         .main-model-box {
-          height: 50vh;
+          height: 40vh;
         }
 
         .thumbnail-box {
@@ -140,10 +143,9 @@
       }
     </style>
   </head>
-
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top header-transparent">
+    <header class="fixed-top header-transparent" id="header">
       <div class="container d-flex align-items-center justify-content-between">
         <div class="logo">
           <h1 class="text-light">
@@ -152,11 +154,11 @@
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
-
-        <nav id="navbar" class="navbar">
+        <nav class="navbar" id="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+            <li><a class="nav-link scrollto" href="#products">Products</a></li>
             <li><a class="nav-link scrollto" href="#why-us">Why Us</a></li>
             <li><a class="nav-link scrollto" href="#services">Services</a></li>
             <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
@@ -186,7 +188,6 @@
       </div>
     </header>
     <!-- End Header -->
-
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container" data-aos="fade-up">
@@ -194,16 +195,15 @@
         <h2>
           Leading business provider in mountaineering oxygen providing sector.
         </h2>
-        <a href="#about" class="btn-get-started scrollto"
+        <a class="btn-get-started scrollto" href="#about"
           ><i class="bx bx-chevrons-down"></i
         ></a>
       </div>
     </section>
     <!-- End Hero -->
-
     <main id="main">
       <!-- ======= About Section ======= -->
-      <section id="about" class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="row no-gutters">
             <div
@@ -230,7 +230,7 @@
 
                   <!-- We are the leader in refilling, selling and renting liquid state mountaineering oxygen cylinders in Nepal.  -->
                 </p>
-                <a href="#" class="about-btn"
+                <a class="about-btn" href="#"
                   >About us <i class="bx bx-chevron-right"></i
                 ></a>
               </div>
@@ -285,90 +285,187 @@
         </div>
       </section>
 
-      <section id="3d-models" class="section-bg">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>3D Models</h2>
-            <p>Explore our mountaineering oxygen equipment in 3D</p>
+      <section id="products" class="products">
+        <div class="container">
+          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+            <h2>Our Products</h2>
           </div>
-
-          <div class="model-container">
-            <div class="main-model-box">
-              <model-viewer
-                id="main-model"
-                alt="Mountaineering Oxygen Equipment"
-                src="assets/models/maskonly.glb"
-                ar
-                exposure="1.5"
-                shadow-intensity="1"
-                camera-controls
-                auto-rotate
-                camera-orbit="0deg 75deg 50m"
-                touch-action="pan-y"
-              ></model-viewer>
-            </div>
-            <div class="model-title" id="main-model-title">Oxygen Mask</div>
-
-            <div class="thumbnail-container">
-              <div
-                class="thumbnail-box active"
-                data-model="maskonly.glb"
-                data-title="Oxygen Mask"
-              >
-                <model-viewer
-                  alt="Mountaineering Oxygen Mask"
-                  src="assets/models/maskonly.glb"
-                  exposure="1.5"
-                  shadow-intensity="1"
-                  auto-rotate
-                  camera-orbit="0deg 75deg 50m"
-                ></model-viewer>
-              </div>
-              <div
-                class="thumbnail-box"
-                data-model="oxygencylinder.glb"
-                data-title="Oxygen Cylinder"
-              >
-                <model-viewer
-                  alt="Mountaineering Oxygen Cylinder"
-                  src="assets/models/oxygencylinder.glb"
-                  exposure="1"
-                  shadow-intensity="1"
-                  auto-rotate
-                  camera-orbit="0deg 75deg 50m"
-                ></model-viewer>
-              </div>
-              <div
-                class="thumbnail-box"
-                data-model="gaslink.glb"
-                data-title="Oxygen Regulator"
-              >
-                <model-viewer
-                  alt="Mountaineering Oxygen Regulator"
-                  src="assets/models/gaslink.glb"
-                  exposure="2.5"
-                  shadow-intensity="1"
-                  auto-rotate
-                  camera-orbit="0deg 75deg 50m"
-                ></model-viewer>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="model-container">
+                <div class="main-model-box" data-aos="fade-up">
+                  <model-viewer
+                    alt="Mountaineering Oxygen Equipment"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    camera-controls
+                    camera-orbit="0deg 75deg auto"
+                    min-camera-orbit="auto auto 50%"
+                    max-camera-orbit="auto auto 400%"
+                    environment-image="neutral"
+                    exposure="1.5"
+                    id="main-model"
+                    shadow-intensity="1.06"
+                    shadow-softness="1"
+                    src="assets/models/maskonly.glb"
+                    tone-mapping="agx"
+                    touch-action="pan-y"
+                  >
+                  </model-viewer>
+                </div>
+                <div class="model-title" id="main-model-title">Oxygen Mask</div>
+                <div class="thumbnail-container" data-aos="fade-up">
+                  <!-- Thumbnail boxes here -->
+                  <div
+                    class="thumbnail-box active"
+                    data-model="maskonly.glb"
+                    data-title="Oxygen Mask"
+                  >
+                    <model-viewer
+                      alt="Mountaineering Oxygen Mask"
+                      ar-modes="webxr scene-viewer quick-look"
+                      auto-rotate=""
+                      camera-orbit="0deg 75deg 50m"
+                      exposure="1.5"
+                      shadow-intensity="1.06"
+                      shadow-softness="1"
+                      src="assets/models/maskonly.glb"
+                      tone-mapping="agx"
+                      touch-action="pan-y"
+                    ></model-viewer>
+                  </div>
+                  <div
+                    class="thumbnail-box"
+                    data-model="oxygencylinder.glb"
+                    data-title="Oxygen Cylinder"
+                  >
+                    <model-viewer
+                      alt="Mountaineering Oxygen Cylinder"
+                      ar-modes="webxr scene-viewer quick-look"
+                      auto-rotate=""
+                      camera-orbit="0deg 75deg 50m"
+                      exposure="1.2"
+                      shadow-intensity="1.06"
+                      shadow-softness="1"
+                      src="assets/models/oxygencylinder.glb"
+                      tone-mapping="agx"
+                      touch-action="pan-y"
+                    ></model-viewer>
+                  </div>
+                  <div
+                    class="thumbnail-box"
+                    data-model="regulator1.glb"
+                    data-title="Oxygen Regulator"
+                  >
+                    <model-viewer
+                      alt="Mountaineering Oxygen Regulator"
+                      ar-modes="webxr scene-viewer quick-look"
+                      auto-rotate=""
+                      camera-orbit="0deg 75deg 50m"
+                      exposure="3.5"
+                      shadow-intensity="1.06"
+                      shadow-softness="1"
+                      src="assets/models/regulator1.glb"
+                      tone-mapping="agx"
+                      touch-action="pan-y"
+                    ></model-viewer>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <model-viewer
-        id="envlight-demo"
-        camera-controls
-        touch-action="pan-y"
-        disable-pan
-        oncontextmenu="return false;"
-        src="assets/models/maskonly.glb"
-        skybox-image="assets/models/spruit_sunrise_1k_HDR.hdr"
-        alt="A 3D model of a damaged helmet"
-      ></model-viewer>
-
+      <!-- <section class="products-section" id="products">
+        <div class="container">
+          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+            <h2>Our Products</h2>
+          </div>
+          <section id="3d-models">
+            <div class="model-container">
+              <div class="main-model-box">
+                <model-viewer
+                  alt="Mountaineering Oxygen Equipment"
+                  ar
+                  ar-modes="webxr scene-viewer quick-look"
+                  camera-controls
+                  camera-orbit="0deg 75deg auto"
+                  min-camera-orbit="auto auto 50%"
+                  max-camera-orbit="auto auto 400%"
+                  environment-image="neutral"
+                  exposure="1.5"
+                  id="main-model"
+                  shadow-intensity="1.06"
+                  shadow-softness="1"
+                  src="assets/models/maskonly.glb"
+                  tone-mapping="agx"
+                  touch-action="pan-y"
+                >
+                </model-viewer>
+              </div>
+              <div class="model-title" id="main-model-title">Oxygen Mask</div>
+              <div class="thumbnail-container">
+                <div
+                  class="thumbnail-box active"
+                  data-model="maskonly.glb"
+                  data-title="Oxygen Mask"
+                >
+                  <model-viewer
+                    alt="Mountaineering Oxygen Mask"
+                    ar-modes="webxr scene-viewer quick-look"
+                    auto-rotate=""
+                    camera-orbit="0deg 75deg 50m"
+                    exposure="1.5"
+                    shadow-intensity="1.06"
+                    shadow-softness="1"
+                    src="assets/models/maskonly.glb"
+                    tone-mapping="agx"
+                    touch-action="pan-y"
+                  ></model-viewer>
+                </div>
+                <div
+                  class="thumbnail-box"
+                  data-model="oxygencylinder.glb"
+                  data-title="Oxygen Cylinder"
+                >
+                  <model-viewer
+                    alt="Mountaineering Oxygen Cylinder"
+                    ar-modes="webxr scene-viewer quick-look"
+                    auto-rotate=""
+                    camera-orbit="0deg 75deg 50m"
+                    exposure="1.2"
+                    shadow-intensity="1.06"
+                    shadow-softness="1"
+                    src="assets/models/oxygencylinder.glb"
+                    tone-mapping="agx"
+                    touch-action="pan-y"
+                  ></model-viewer>
+                </div>
+                <div
+                  class="thumbnail-box"
+                  data-model="regulator1.glb"
+                  data-title="Oxygen Regulator"
+                >
+                  <model-viewer
+                    alt="Mountaineering Oxygen Regulator"
+                    ar-modes="webxr scene-viewer quick-look"
+                    auto-rotate=""
+                    camera-orbit="0deg 75deg 50m"
+                    exposure="3.5"
+                    shadow-intensity="1.06"
+                    shadow-softness="1"
+                    src="assets/models/regulator1.glb"
+                    tone-mapping="agx"
+                    touch-action="pan-y"
+                  ></model-viewer>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section> -->
       <!-- End About Section -->
-      <section id="why-us" class="why-us">
+      <section class="why-us" id="why-us">
         <div class="container">
           <div class="row no-gutters">
             <div
@@ -395,14 +492,13 @@
                       <div class="col-12 d-block d-lg-none text-center pb-3">
                         <div class="border">
                           <img
+                            alt=""
                             class="w-50 mb-3"
                             src="assets/img/Refilling.jpg"
-                            alt=""
                           />
                         </div>
                       </div>
                     </div>
-
                     <div class="row align-items-end">
                       <div class="col-12 col-lg-12">
                         <p class="m-0">
@@ -425,14 +521,14 @@
                       >
                         <!-- <img class="w-50 mb-3 border" src="/assets/img/grade-medical.jpg" alt=""> -->
                         <img
+                          alt=""
                           class="w-50 mb-3 p-1"
                           src="assets/img/why us.jpg"
-                          alt=""
                         />
                         <img
+                          alt=""
                           class="w-50 mb-3 p-1"
                           src="assets/img/Picture3.jpg"
-                          alt=""
                         />
                       </div>
                     </div>
@@ -457,9 +553,9 @@
                         class="col-12 col-6 d-block d-lg-none text-center d-flex"
                       >
                         <img
+                          alt=""
                           class="w-100 mb-3"
                           src="assets/img/repair.jpg"
-                          alt=""
                         />
                       </div>
                     </div>
@@ -478,16 +574,15 @@
                       </div>
                       <div class="col-12 d-block d-lg-none text-center d-flex">
                         <img
+                          alt=""
                           class="w-50 border mb-3"
                           src="assets/img/Picture44.jpg"
-                          alt=""
                         />
                         <img
+                          alt=""
                           class="w-50 mb-3 border"
                           src="assets/img/Picture555.jpg"
-                          alt=""
                         />
-
                         <!-- <hr> -->
                       </div>
                     </div>
@@ -501,44 +596,44 @@
                     <div class="row text-center">
                       <div class="col-6">
                         <img
+                          alt=""
                           class="w-100 mb-3"
                           src="assets/img/Picture66.jpg"
-                          alt=""
                         />
                       </div>
                       <div class="col-6">
                         <img
+                          alt=""
                           class="w-100 mb-3"
                           src="assets/img/Picture77.jpg"
-                          alt=""
                         />
                       </div>
                       <div class="col-6">
                         <img
+                          alt=""
                           class="w-100 mb-3"
                           src="assets/img/why us.jpg"
-                          alt=""
                         />
                       </div>
                       <div class="col-6">
                         <img
+                          alt=""
                           class="w-100 mb-3"
                           src="assets/img/Picture3.jpg"
-                          alt=""
                         />
                       </div>
                       <div class="col-6">
                         <img
+                          alt=""
                           class="w-100 mb-3"
                           src="assets/img/Picture44.jpg"
-                          alt=""
                         />
                       </div>
                       <div class="col-6">
                         <img
+                          alt=""
                           class="w-100 mb-3"
                           src="assets/img/Picture55.jpg"
-                          alt=""
                         />
                       </div>
                     </div>
@@ -551,13 +646,12 @@
         </div>
       </section>
       <!-- ======= Services Section ======= -->
-      <section id="services" class="services">
+      <section class="services" id="services">
         <div class="container">
           <div class="section-title" data-aos="fade-in" data-aos-delay="100">
             <h2>Our Services</h2>
             <!-- <p>Major Services we provide are: </p> -->
           </div>
-
           <div class="row">
             <div
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
@@ -572,7 +666,6 @@
                 </p>
               </div>
             </div>
-
             <div
               class="col-md-6 col-12 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
@@ -580,13 +673,11 @@
                 <div class="icon"><i class="bx bx-file"></i></div>
                 <h4 class="title"><a href="">Rental</a></h4>
                 <p class="description">
-                  We offer Rental service of cylinders. &nbsp; &nbsp; &nbsp;
-                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  We offer Rental service of cylinders.                        
+                             
                 </p>
               </div>
             </div>
-
             <div
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
@@ -599,7 +690,6 @@
                 </p>
               </div>
             </div>
-
             <div
               class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
             >
@@ -616,7 +706,6 @@
         </div>
       </section>
       <!-- End Services Section -->
-
       <!-- ======= Counts Section ======= -->
       <!-- <section id="counts" class="counts  section-bg">
       <div class="container">
@@ -660,9 +749,8 @@
       </div>
     </section> -->
       <!-- End Counts Section -->
-
       <!-- ======= Cta Section ======= -->
-      <section id="cta" class="cta">
+      <section class="cta" id="cta">
         <div class="container" data-aos="zoom-in">
           <div class="text-center">
             <h3>Request A Quotation</h3>
@@ -680,7 +768,6 @@
         </div>
       </section>
       <!-- End Cta Section -->
-
       <!-- ======= Portfolio Section ======= -->
       <!-- <section id="portfolio" class="portfolio">
       <div class="container">
@@ -797,7 +884,6 @@
       </div>
     </section>  -->
       <!-- End Portfolio Section -->
-
       <!-- ======= Testimonials Section ======= -->
       <!-- <section id="testimonials" class="testimonials section-bg">
       <div class="container">
@@ -823,7 +909,6 @@
               </div>
             </div> -->
       <!-- End testimonial item -->
-
       <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
@@ -837,7 +922,6 @@
               </div>
             </div> -->
       <!-- End testimonial item -->
-
       <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
@@ -851,7 +935,6 @@
               </div>
             </div> -->
       <!-- End testimonial item -->
-
       <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
@@ -865,7 +948,6 @@
               </div>
             </div> -->
       <!-- End testimonial item -->
-
       <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
@@ -879,7 +961,6 @@
               </div>
             </div> -->
       <!-- End testimonial item -->
-
       <!-- </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -887,7 +968,6 @@
       </div>
     </section> -->
       <!-- End Testimonials Section -->
-
       <!-- ======= Team Section ======= -->
       <!--
     <section id="team" class="team">
@@ -956,13 +1036,12 @@
     </section>End Team Section
     -->
       <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact section-bg">
+      <section class="contact section-bg" id="contact">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Contact</h2>
             <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
           </div>
-
           <div class="row">
             <div class="col-lg-6">
               <div class="info-box mb-4">
@@ -971,7 +1050,6 @@
                 <p>Patan Dhoka, Lalitpur, Nepal</p>
               </div>
             </div>
-
             <div class="col-lg-3 col-md-6">
               <div class="info-box mb-4">
                 <i class="bx bx-envelope"></i>
@@ -979,7 +1057,6 @@
                 <p>sdgases.mgmt@gmail.com</p>
               </div>
             </div>
-
             <div class="col-lg-3 col-md-6">
               <div class="info-box mb-4">
                 <i class="bx bx-phone-call"></i>
@@ -988,65 +1065,63 @@
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-lg-6">
               <!-- <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe> -->
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.9469697641957!2d85.31955252681638!3d27.67801590636358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19215c6d0439%3A0x7c48932e5f9c5d50!2sSD%20Gases!5e0!3m2!1sne!2snp!4v1647407429961!5m2!1sne!2snp"
-                frameborder="0"
-                style="border: 0; width: 100%; height: 384px"
                 allowfullscreen=""
+                frameborder="0"
                 loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.9469697641957!2d85.31955252681638!3d27.67801590636358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19215c6d0439%3A0x7c48932e5f9c5d50!2sSD%20Gases!5e0!3m2!1sne!2snp!4v1647407429961!5m2!1sne!2snp"
+                style="border: 0; width: 100%; height: 384px"
               ></iframe>
             </div>
-
             <div class="col-lg-6">
               <form
                 action="forms/contact.php"
+                class="php-email-form"
                 method="post"
                 role="form"
-                class="php-email-form"
               >
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input
-                      type="text"
-                      name="name"
                       class="form-control"
                       id="name"
+                      name="name"
                       placeholder="Your Name"
-                      required
+                      required=""
+                      type="text"
                     />
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
                     <input
-                      type="email"
                       class="form-control"
-                      name="email"
                       id="email"
+                      name="email"
                       placeholder="Your Email"
-                      required
+                      required=""
+                      type="email"
                     />
                   </div>
                 </div>
                 <div class="form-group mt-3">
                   <input
-                    type="text"
                     class="form-control"
-                    name="subject"
                     id="subject"
+                    name="subject"
                     placeholder="Subject"
-                    required
+                    required=""
+                    type="text"
                   />
                 </div>
                 <div class="form-group mt-3">
                   <textarea
                     class="form-control"
                     name="message"
-                    rows="5"
                     placeholder="Message"
-                    required
+                    required=""
+                    rows="5"
                   ></textarea>
                 </div>
                 <div class="my-3">
@@ -1067,7 +1142,6 @@
       <!-- End Contact Section -->
     </main>
     <!-- End #main -->
-
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="footer-top">
@@ -1094,7 +1168,6 @@
               </div> -->
               </div>
             </div>
-
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
@@ -1117,7 +1190,6 @@
                 </li>
               </ul>
             </div>
-
             <div class="col-lg-2 col-md-6 footer-links">
               <h4>Our Services</h4>
               <ul>
@@ -1138,7 +1210,6 @@
                 </li>
               </ul>
             </div>
-
             <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
@@ -1150,10 +1221,9 @@
           </div>
         </div>
       </div>
-
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Sdgases</span></strong
+          © Copyright <strong><span>Sdgases</span></strong
           >. All Rights Reserved
         </div>
         <div class="credits">
@@ -1166,13 +1236,11 @@
       </div>
     </footer>
     <!-- End Footer -->
-
     <a
-      href="#"
       class="back-to-top d-flex align-items-center justify-content-center"
+      href="#"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
-
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const mainModel = document.getElementById("main-model");
@@ -1193,105 +1261,6 @@
         });
       });
     </script>
-    <script type="module">
-      const modelViewer = document.querySelector("#envlight-demo");
-
-      let lastX;
-      let panning = false;
-      let skyboxAngle = 0;
-      let radiansPerPixel;
-
-      const startPan = () => {
-        const orbit = modelViewer.getCameraOrbit();
-        const { radius } = orbit;
-        radiansPerPixel =
-          (-1 * radius) / modelViewer.getBoundingClientRect().height;
-        modelViewer.interactionPrompt = "none";
-      };
-
-      const updatePan = (thisX) => {
-        const delta = (thisX - lastX) * radiansPerPixel;
-        lastX = thisX;
-        skyboxAngle += delta;
-        const orbit = modelViewer.getCameraOrbit();
-        orbit.theta += delta;
-        modelViewer.cameraOrbit = orbit.toString();
-        modelViewer.resetTurntableRotation(skyboxAngle);
-        modelViewer.jumpCameraToGoal();
-      };
-
-      modelViewer.addEventListener(
-        "mousedown",
-        (event) => {
-          panning =
-            event.button === 2 ||
-            event.ctrlKey ||
-            event.metaKey ||
-            event.shiftKey;
-          if (!panning) return;
-
-          lastX = event.clientX;
-          startPan();
-          event.stopPropagation();
-        },
-        true
-      );
-
-      modelViewer.addEventListener(
-        "touchstart",
-        (event) => {
-          const { targetTouches, touches } = event;
-          panning =
-            targetTouches.length === 2 &&
-            targetTouches.length === touches.length;
-          if (!panning) return;
-
-          lastX = 0.5 * (targetTouches[0].clientX + targetTouches[1].clientX);
-          startPan();
-        },
-        true
-      );
-
-      self.addEventListener(
-        "mousemove",
-        (event) => {
-          if (!panning) return;
-
-          updatePan(event.clientX);
-          event.stopPropagation();
-        },
-        true
-      );
-
-      modelViewer.addEventListener(
-        "touchmove",
-        (event) => {
-          if (!panning || event.targetTouches.length !== 2) return;
-
-          const { targetTouches } = event;
-          const thisX =
-            0.5 * (targetTouches[0].clientX + targetTouches[1].clientX);
-          updatePan(thisX);
-        },
-        true
-      );
-
-      self.addEventListener(
-        "mouseup",
-        (event) => {
-          panning = false;
-        },
-        true
-      );
-
-      modelViewer.addEventListener(
-        "touchend",
-        (event) => {
-          panning = false;
-        },
-        true
-      );
-    </script>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
@@ -1300,7 +1269,6 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>

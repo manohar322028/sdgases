@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SD Gases</title>
+    <meta content="Sd Gases" name="description" />
+    <meta content="" name="keywords" />
+    <!-- Favicons -->
+    <link href="assets/img/sdgases_logo.png" rel="icon" />
+    <link href="assets/img/sdgases_logo.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <script
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/831f59072b.js"
+    ></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+      type="module"
+    ></script>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- =======================================================
+  * Template Name: Squadfree - v4.7.0
+  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+
+  ======================================================== -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-HMEJ2NJZ6X"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HMEJ2NJZ6X");
+    </script>
+    <style>
+      #products {
+        padding: 60px 0 30px;
+        background-color: #f8f9fa;
+      }
+
+      .model-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .main-model-box {
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+      }
+
+      .thumbnail-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .thumbnail-box {
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #ffffff;
+      }
+
+      .thumbnail-box:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .thumbnail-box.active {
+        border: 2px solid #67b0d1;
+      }
+
+      .model-title {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #2f4d5a;
+      }
+
+      model-viewer {
+        width: 100%;
+        height: 100%;
+        --poster-color: transparent;
+      }
+
+      model-viewer::part(default-progress-bar) {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .main-model-box {
+          height: 40vh;
+        }
+
+        .thumbnail-box {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header class="fixed-top header-transparent" id="header">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light">
+            <a href="index.html"><span>Sd Gases</span></a>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+        <nav class="navbar" id="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+            <li><a class="nav-link scrollto" href="#products">Products</a></li>
+            <li><a class="nav-link scrollto" href="#why-us">Why Us</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
+            <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+            <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container" data-aos="fade-up">
+        <h1>SD Gases</h1>
+        <h2>
+          Leading business provider in mountaineering oxygen providing sector.
+        </h2>
+        <a class="btn-get-started scrollto" href="#about"
+          ><i class="bx bx-chevrons-down"></i
+        ></a>
+      </div>
+    </section>
+    <!-- End Hero -->
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="row no-gutters">
+            <div
+              class="content col-xl-5 d-flex align-items-stretch"
+              data-aos="fade-up"
+            >
+              <div class="content">
+                <h3>What is SD Gases?</h3>
+                <p>
+                  SD gases is the major service provider of high pressure
+                  aviation grade, medical supplementary oxygen systems for high
+                  altitude Himalayan mountaineering.
+                </p>
+                <p>
+                  SD gases deals with all kinds of services with sales and
+                  purchase of aviation grade, medical supplementary oxygen
+                  system for mountaineering and helicopter use. We specialize in
+                  the development, manufacture and post sales service of
+                  supplemental oxygen systems for use at high altitude. Sd gases
+                  has been in business for over 15 years and, thanks to our
+                  customers, has grown to be Nepal's popular refilling and
+                  assembling center with involvement of 80% of the total market
+                  in mountaineering supplementary oxygen busines.
+
+                  <!-- We are the leader in refilling, selling and renting liquid state mountaineering oxygen cylinders in Nepal.  -->
+                </p>
+                <a class="about-btn" href="#"
+                  >About us <i class="bx bx-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-stretch">
+              <div class="icon-boxes d-flex flex-column justify-content-center">
+                <div class="row">
+                  <div
+                    class="col-md-6 icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <i class="bx bx-cog"></i>
+                    <h4>Best Quality</h4>
+                    <p>We provide best quality products and services.</p>
+                  </div>
+                  <div
+                    class="col-md-6 icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <i class="bx bx-dollar"></i>
+                    <h4>Reasonable Pricing</h4>
+                    <p>We provide service at best the cost.</p>
+                  </div>
+                  <div
+                    class="col-md-6 icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <i class="bx bxs-group"></i>
+                    <h4>Experts From Russia</h4>
+                    <p>
+                      We have experts from Russia with experience of decades
+                      working with us.
+                    </p>
+                  </div>
+                  <div
+                    class="col-md-6 icon-box"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <i class="bx bxs-watch"></i>
+                    <h4>Efficient</h4>
+                    <p>We work with best time efficient service.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End .content-->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="products">
+        <div class="container">
+          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+            <h2>Our Products</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="model-container">
+                <div class="main-model-box" data-aos="fade-up">
+                  <model-viewer
+                    alt="Mountaineering Oxygen Equipment"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    camera-controls
+                    camera-orbit="0deg 75deg auto"
+                    min-camera-orbit="auto auto 50%"
+                    max-camera-orbit="auto auto 400%"
+                    environment-image="neutral"
+                    exposure="1.5"
+                    id="main-model"
+                    shadow-intensity="1.06"
+                    shadow-softness="1"
+                    src="assets/models/maskonly.glb"
+                    tone-mapping="agx"
+                    touch-action="pan-y"
+                  >
+                  </model-viewer>
+                </div>
+                <div class="model-title" id="main-model-title">Oxygen Mask</div>
+                <div class="thumbnail-container" data-aos="fade-up">
+                  <!-- Thumbnail boxes here -->
+                  <div
+                    class="thumbnail-box active"
+                    data-model="maskonly.glb"
+                    data-title="Oxygen Mask"
+                  >
+                    <model-viewer
+                      alt="Mountaineering Oxygen Mask"
+                      ar-modes="webxr scene-viewer quick-look"
+                      auto-rotate=""
+                      camera-orbit="0deg 75deg 50m"
+                      exposure="1.5"
+                      shadow-intensity="1.06"
+                      shadow-softness="1"
+                      src="assets/models/maskonly.glb"
+                      tone-mapping="agx"
+                      touch-action="pan-y"
+                    ></model-viewer>
+                  </div>
+                  <div
+                    class="thumbnail-box"
+                    data-model="oxygencylinder.glb"
+                    data-title="Oxygen Cylinder"
+                  >
+                    <model-viewer
+                      alt="Mountaineering Oxygen Cylinder"
+                      ar-modes="webxr scene-viewer quick-look"
+                      auto-rotate=""
+                      camera-orbit="0deg 75deg 50m"
+                      exposure="1.2"
+                      shadow-intensity="1.06"
+                      shadow-softness="1"
+                      src="assets/models/oxygencylinder.glb"
+                      tone-mapping="agx"
+                      touch-action="pan-y"
+                    ></model-viewer>
+                  </div>
+                  <div
+                    class="thumbnail-box"
+                    data-model="regulator1.glb"
+                    data-title="Oxygen Regulator"
+                  >
+                    <model-viewer
+                      alt="Mountaineering Oxygen Regulator"
+                      ar-modes="webxr scene-viewer quick-look"
+                      auto-rotate=""
+                      camera-orbit="0deg 75deg 50m"
+                      exposure="3.5"
+                      shadow-intensity="1.06"
+                      shadow-softness="1"
+                      src="assets/models/regulator1.glb"
+                      tone-mapping="agx"
+                      touch-action="pan-y"
+                    ></model-viewer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="products-section" id="products">
+        <div class="container">
+          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+            <h2>Our Products</h2>
+          </div>
+          <section id="3d-models">
+            <div class="model-container">
+              <div class="main-model-box">
+                <model-viewer
+                  alt="Mountaineering Oxygen Equipment"
+                  ar
+                  ar-modes="webxr scene-viewer quick-look"
+                  camera-controls
+                  camera-orbit="0deg 75deg auto"
+                  min-camera-orbit="auto auto 50%"
+                  max-camera-orbit="auto auto 400%"
+                  environment-image="neutral"
+                  exposure="1.5"
+                  id="main-model"
+                  shadow-intensity="1.06"
+                  shadow-softness="1"
+                  src="assets/models/maskonly.glb"
+                  tone-mapping="agx"
+                  touch-action="pan-y"
+                >
+                </model-viewer>
+              </div>
+              <div class="model-title" id="main-model-title">Oxygen Mask</div>
+              <div class="thumbnail-container">
+                <div
+                  class="thumbnail-box active"
+                  data-model="maskonly.glb"
+                  data-title="Oxygen Mask"
+                >
+                  <model-viewer
+                    alt="Mountaineering Oxygen Mask"
+                    ar-modes="webxr scene-viewer quick-look"
+                    auto-rotate=""
+                    camera-orbit="0deg 75deg 50m"
+                    exposure="1.5"
+                    shadow-intensity="1.06"
+                    shadow-softness="1"
+                    src="assets/models/maskonly.glb"
+                    tone-mapping="agx"
+                    touch-action="pan-y"
+                  ></model-viewer>
+                </div>
+                <div
+                  class="thumbnail-box"
+                  data-model="oxygencylinder.glb"
+                  data-title="Oxygen Cylinder"
+                >
+                  <model-viewer
+                    alt="Mountaineering Oxygen Cylinder"
+                    ar-modes="webxr scene-viewer quick-look"
+                    auto-rotate=""
+                    camera-orbit="0deg 75deg 50m"
+                    exposure="1.2"
+                    shadow-intensity="1.06"
+                    shadow-softness="1"
+                    src="assets/models/oxygencylinder.glb"
+                    tone-mapping="agx"
+                    touch-action="pan-y"
+                  ></model-viewer>
+                </div>
+                <div
+                  class="thumbnail-box"
+                  data-model="regulator1.glb"
+                  data-title="Oxygen Regulator"
+                >
+                  <model-viewer
+                    alt="Mountaineering Oxygen Regulator"
+                    ar-modes="webxr scene-viewer quick-look"
+                    auto-rotate=""
+                    camera-orbit="0deg 75deg 50m"
+                    exposure="3.5"
+                    shadow-intensity="1.06"
+                    shadow-softness="1"
+                    src="assets/models/regulator1.glb"
+                    tone-mapping="agx"
+                    touch-action="pan-y"
+                  ></model-viewer>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section> -->
+      <!-- End About Section -->
+      <section class="why-us" id="why-us">
+        <div class="container">
+          <div class="row no-gutters">
+            <div
+              class="content col-xl-12 d-flex align-items-stretch"
+              data-aos="fade-up"
+            >
+              <div class="content">
+                <h3>Why Us?</h3>
+                <div
+                  class="row align-items-center flex-column-reverse flex-lg-row"
+                >
+                  <div class="col-lg-9 col-md-12">
+                    <div class="row align-items-center">
+                      <div class="col-12 col-lg-12">
+                        <p class="m-0"><b>1. Refilling</b></p>
+                        <p>
+                          We are the only company in Nepal to refill high
+                          pressure cylinders with liquid trans fill technology
+                          and have been successfully refilling cylinders for
+                          mountaineering for 10 years now. Our latest technology
+                          helps oxygen bottles to maintain dew point moisture.
+                        </p>
+                      </div>
+                      <div class="col-12 d-block d-lg-none text-center pb-3">
+                        <div class="border">
+                          <img
+                            alt=""
+                            class="w-50 mb-3"
+                            src="assets/img/Refilling.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-items-end">
+                      <div class="col-12 col-lg-12">
+                        <p class="m-0">
+                          <b
+                            >2. Sales of O₂ aviation grade, medical
+                            supplementary systems</b
+                          >
+                        </p>
+                        <p>
+                          We supply high-quality cylinders, regulators, and
+                          facemasks for purchase or rental, making oxygen
+                          supplementary systems easy. Our products, including
+                          the lightest oxygen cylinder and durable regulator,
+                          set a standard recognized for use on Asia's highest
+                          peaks. Fast and reliable service.
+                        </p>
+                      </div>
+                      <div
+                        class="col-12 d-block d-lg-none align-self-center text-center d-flex"
+                      >
+                        <!-- <img class="w-50 mb-3 border" src="/assets/img/grade-medical.jpg" alt=""> -->
+                        <img
+                          alt=""
+                          class="w-50 mb-3 p-1"
+                          src="assets/img/why us.jpg"
+                        />
+                        <img
+                          alt=""
+                          class="w-50 mb-3 p-1"
+                          src="assets/img/Picture3.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="row align-items-end jus">
+                      <div class="col-12 col-lg-12">
+                        <p class="m-0">
+                          <b
+                            >3. Repair, refill and maintenance of O₂
+                            cylinders</b
+                          >
+                        </p>
+                        <p>
+                          We refill H.P. and L.P. cylinders using a liquid trans
+                          fill process. Our specialized services include
+                          essential maintenance like nozzle repair/change with
+                          genuine Russian spare parts and purging, ensuring
+                          reliable and worry-free use of used products for many
+                          years on a budget.
+                        </p>
+                      </div>
+                      <div
+                        class="col-12 col-6 d-block d-lg-none text-center d-flex"
+                      >
+                        <img
+                          alt=""
+                          class="w-100 mb-3"
+                          src="assets/img/repair.jpg"
+                        />
+                      </div>
+                    </div>
+                    <div class="row align-items-end">
+                      <div class="col-12 col-lg-12">
+                        <p class="m-0"><b>4. Rental equipment</b></p>
+                        <p>
+                          Many companies struggle to estimate climbers each
+                          season, especially newly established or foreign-based
+                          ones facing financial and security challenges. To
+                          address this, we offer a solution: renting essential
+                          equipment for expeditions, including lightweight
+                          cylinders, oxygen masks, regulators, and other
+                          necessary items for a supplementary oxygen system.
+                        </p>
+                      </div>
+                      <div class="col-12 d-block d-lg-none text-center d-flex">
+                        <img
+                          alt=""
+                          class="w-50 border mb-3"
+                          src="assets/img/Picture44.jpg"
+                        />
+                        <img
+                          alt=""
+                          class="w-50 mb-3 border"
+                          src="assets/img/Picture555.jpg"
+                        />
+                        <!-- <hr> -->
+                      </div>
+                    </div>
+                    <!-- <p><b>Repair, refill and maintenance of O₂ cylinders</b></p>
+                <p>We refill any kind of H.P. and L.P. cylinders with a liquid trans fill process. Our service specializes on essential maintenance such as nozzle repair/change (with Russian genuine spare part), purging of cylinders which have been proven very compelling for this business as it helps our respected client to be unworried and reliable on using their used product after expedition efficiently for many years in an affordable budget. </p>
+               -->
+                  </div>
+                  <div
+                    class="col-lg-3 d-none d-md-none d-lg-block col-md-12 text-center"
+                  >
+                    <div class="row text-center">
+                      <div class="col-6">
+                        <img
+                          alt=""
+                          class="w-100 mb-3"
+                          src="assets/img/Picture66.jpg"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <img
+                          alt=""
+                          class="w-100 mb-3"
+                          src="assets/img/Picture77.jpg"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <img
+                          alt=""
+                          class="w-100 mb-3"
+                          src="assets/img/why us.jpg"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <img
+                          alt=""
+                          class="w-100 mb-3"
+                          src="assets/img/Picture3.jpg"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <img
+                          alt=""
+                          class="w-100 mb-3"
+                          src="assets/img/Picture44.jpg"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <img
+                          alt=""
+                          class="w-100 mb-3"
+                          src="assets/img/Picture55.jpg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <a href="#" class="about-btn">About us <i class="bx bx-chevron-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======= Services Section ======= -->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+            <h2>Our Services</h2>
+            <!-- <p>Major Services we provide are: </p> -->
+          </div>
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4 class="title"><a href="">Sale</a></h4>
+                <p>
+                  High pressure and low pressure mountaineering and skydiving
+                  cylinders with regialtors and facemasks are availble for
+                  selling.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-12 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4 class="title"><a href="">Rental</a></h4>
+                <p class="description">
+                  We offer Rental service of cylinders.                        
+                             
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4 class="title"><a href="">ReFill</a></h4>
+                <p class="description">
+                  We are offer refilling of medical and mountaineering oxygen
+                  cylinders.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon"><i class="bx bx-wrench"></i></div>
+                <h4 class="title"><a href="">Repair</a></h4>
+                <p class="description">
+                  We Offer Repairing of Mountaineering Cylinders, Regulator and
+                  Masks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+      <!-- ======= Counts Section ======= -->
+      <!-- <section id="counts" class="counts  section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> consequuntur quae</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+      <!-- End Counts Section -->
+      <!-- ======= Cta Section ======= -->
+      <section class="cta" id="cta">
+        <div class="container" data-aos="zoom-in">
+          <div class="text-center">
+            <h3>Request A Quotation</h3>
+            <p>
+              Quotation availble for new product, rental and refilling cylinder.
+              Click Button below to Request quotation.
+            </p>
+            <a
+              class="cta-btn"
+              href="https://sdg.amatya.biz/products/order"
+              target="_blank"
+              >Request Quote</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- End Cta Section -->
+      <!-- ======= Portfolio Section ======= -->
+      <!-- <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>  -->
+      <!-- End Portfolio Section -->
+      <!-- ======= Testimonials Section ======= -->
+      <!-- <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Testimonials</h2>
+          <p>Here is what our happy customers think about us.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  In the very sensitive industry, SD gases provide the best quality cylinder and oxygen
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Kame Sherpa</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div> -->
+      <!-- End testimonial item -->
+      <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div> -->
+      <!-- End testimonial item -->
+      <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div> -->
+      <!-- End testimonial item -->
+      <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div> -->
+      <!-- End testimonial item -->
+      <!-- <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div> -->
+      <!-- End testimonial item -->
+      <!-- </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> -->
+      <!-- End Testimonials Section -->
+      <!-- ======= Team Section ======= -->
+      <!--
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Team</h2>
+          <p>This is our of energetic and delicate members of our company.</p>
+        </div>
+
+        <div class="row"> 
+        - team section 
+   
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up">
+              <div class="pic"><img src="assets/images/divasamatya.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. Divas Amatya</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div> 
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="150">
+              <div class="pic"><img src="assets/images/IMG_2723.JPG" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amrita Subedi</h4>
+                <h6>Manager</h6>
+                 <span></span> 
+                  <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div> 
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/images/aayush.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Aayush Shrestha</h4>
+                <span>Field Manager</span>
+                 <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div> 
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Team Section
+    -->
+      <!-- ======= Contact Section ======= -->
+      <section class="contact section-bg" id="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="info-box mb-4">
+                <i class="bx bx-map"></i>
+                <h3>Our Address</h3>
+                <p>Patan Dhoka, Lalitpur, Nepal</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="info-box mb-4">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Us</h3>
+                <p>sdgases.mgmt@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="info-box mb-4">
+                <i class="bx bx-phone-call"></i>
+                <h3>Call Us</h3>
+                <p>+01-5533950</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <!-- <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe> -->
+              <iframe
+                allowfullscreen=""
+                frameborder="0"
+                loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.9469697641957!2d85.31955252681638!3d27.67801590636358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19215c6d0439%3A0x7c48932e5f9c5d50!2sSD%20Gases!5e0!3m2!1sne!2snp!4v1647407429961!5m2!1sne!2snp"
+                style="border: 0; width: 100%; height: 384px"
+              ></iframe>
+            </div>
+            <div class="col-lg-6">
+              <form
+                action="forms/contact.php"
+                class="php-email-form"
+                method="post"
+                role="form"
+              >
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Your Name"
+                      required=""
+                      type="text"
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Your Email"
+                      required=""
+                      type="email"
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    class="form-control"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                    required=""
+                    type="text"
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    placeholder="Message"
+                    required=""
+                    rows="5"
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-info">
+                <h3>SDGASES</h3>
+                <p class="pb-3">
+                  <em>Leading business provider in mountain oxygen sector. </em>
+                </p>
+                <p>
+                  Patandhoka<br />
+                  Lalitpur, Nepal<br /><br />
+                  <strong>Phone:</strong> +01-5533950<br />
+                  <strong>Email:</strong> sdgases.mgmt@gmail.com<br />
+                </p>
+                <!-- <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div> -->
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Refill</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Maintance</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Sale</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Support</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Repair</a>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          © Copyright <strong><span>Sdgases</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <a
+      class="back-to-top d-flex align-items-center justify-content-center"
+      href="#"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mainModel = document.getElementById("main-model");
+        const mainModelTitle = document.getElementById("main-model-title");
+        const thumbnails = document.querySelectorAll(".thumbnail-box");
+
+        thumbnails.forEach((thumbnail) => {
+          thumbnail.addEventListener("click", function () {
+            const modelSrc = this.dataset.model;
+            const modelTitle = this.dataset.title;
+
+            mainModel.src = `assets/models/${modelSrc}`;
+            mainModelTitle.textContent = modelTitle;
+
+            thumbnails.forEach((t) => t.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+      });
+    </script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

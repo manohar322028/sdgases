@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Viewer</title>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .model-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .main-model-box {
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-left: auto;
+        margin-right: auto;
+        background: url("assets/backgrounds/hdr-image.hdr") no-repeat center
+          center / cover;
+      }
+
+      .thumbnail-container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .thumbnail-box {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .thumbnail-box:hover {
+        transform: scale(1.1);
+      }
+
+      .thumbnail-box.active {
+        border: 3px solid #67b0d1;
+      }
+
+      model-viewer {
+        width: 100%;
+        height: 100%;
+      }
+
+      .model-title {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #2f4d5a;
+      }
+
+      @media (max-width: 768px) {
+        .main-model-box {
+          height: 40vh;
+        }
+
+        .thumbnail-box {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .main-model-box {
+          height: 30vh;
+        }
+
+        .thumbnail-box {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="3d-models">
+      <div class="model-container">
+        <div class="main-model-box">
+          <model-viewer
+            id="main-model"
+            alt="Mountaineering Oxygen Equipment"
+            src="assets/models/maskonly.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            poster="assets/posters/maskonly-poster.webp"
+            shadow-intensity="1.06"
+            exposure="1.5"
+            shadow-softness="1"
+            tone-mapping="agx"
+            auto-rotate
+            camera-orbit="0deg 75deg 250%"
+            touch-action="pan-y"
+          ></model-viewer>
+        </div>
+        <div class="model-title" id="main-model-title">Oxygen Mask</div>
+
+        <div class="thumbnail-container">
+          <div
+            class="thumbnail-box active"
+            data-model="maskonly.glb"
+            data-title="Oxygen Mask"
+          >
+            <model-viewer
+              alt="Mountaineering Oxygen Mask"
+              src="assets/models/maskonly.glb"
+              ar-modes="webxr scene-viewer quick-look"
+              exposure="1.5"
+              shadow-intensity="1.06"
+              shadow-softness="1"
+              auto-rotate
+              camera-orbit="0deg 75deg 50m"
+              touch-action="pan-y"
+              tone-mapping="agx"
+            ></model-viewer>
+          </div>
+          <div
+            class="thumbnail-box"
+            data-model="oxygencylinder.glb"
+            data-title="Oxygen Cylinder"
+          >
+            <model-viewer
+              alt="Mountaineering Oxygen Cylinder"
+              src="assets/models/oxygencylinder.glb"
+              ar-modes="webxr scene-viewer quick-look"
+              exposure="1.2"
+              shadow-intensity="1.06"
+              shadow-softness="1"
+              auto-rotate
+              camera-orbit="0deg 75deg 50m"
+              touch-action="pan-y"
+              tone-mapping="agx"
+            ></model-viewer>
+          </div>
+          <div
+            class="thumbnail-box"
+            data-model="regulator1.glb"
+            data-title="Oxygen Regulator"
+          >
+            <model-viewer
+              alt="Mountaineering Oxygen Regulator"
+              src="assets/models/regulator1.glb"
+              ar-modes="webxr scene-viewer quick-look"
+              exposure="3.5"
+              shadow-intensity="1.06"
+              shadow-softness="1"
+              auto-rotate
+              camera-orbit="0deg 75deg 50m"
+              touch-action="pan-y"
+              tone-mapping="agx"
+            ></model-viewer>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mainModel = document.getElementById("main-model");
+        const mainModelTitle = document.getElementById("main-model-title");
+        const thumbnails = document.querySelectorAll(".thumbnail-box");
+
+        thumbnails.forEach((thumbnail) => {
+          thumbnail.addEventListener("click", function () {
+            const modelSrc = this.dataset.model;
+            const modelTitle = this.dataset.title;
+
+            mainModel.src = `assets/models/${modelSrc}`;
+            mainModelTitle.textContent = modelTitle;
+
+            thumbnails.forEach((t) => t.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
